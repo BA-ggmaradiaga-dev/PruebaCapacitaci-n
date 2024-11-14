@@ -3,14 +3,16 @@ name: "primera automatizacion"
 on: [workflow_dispatch] #disparador manual
 
 env:
-  Nombre: "Gabriela"
+  Nombre: "Giselh"
 
 jobs:
   job1:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     
     steps:
       - name: concatenar
     
         run: |
-         "$apellido="Maradiaga" echo {{env.Nombre}} echo $apellido"
+         apellido="Ramos" 
+         echo ${{env.Nombre}} 
+         echo $apellido
