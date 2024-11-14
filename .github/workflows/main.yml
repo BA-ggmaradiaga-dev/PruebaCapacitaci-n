@@ -1,0 +1,16 @@
+name: "primera automatizacion"
+
+on: [workflow_dispatch]
+
+env:
+  Nombre: "Gaby"
+
+jobs:
+
+  steps:
+    name: concatenar
+    runs-on: ubuntu-lastest
+    run: |
+        $apellido="Amador"
+        echo {{env.Nombre}}
+        echo $apellido
